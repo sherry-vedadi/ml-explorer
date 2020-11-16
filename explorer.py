@@ -50,7 +50,7 @@ if session_state.choose_method == 'Server':
     list_list = st.selectbox("Select:" , lst)
     list_list = f"{list_list}"
     st.info("You Selected {}".format(list_list))
-    insert the path
+    # insert the path
     if list_list:
         session_state.tel_path = st.text_input('Enter your Path:', value=session_state.tel_path)
         tel_path = session_state.tel_path
@@ -61,7 +61,7 @@ if session_state.choose_method == 'Server':
             import tel.table
             sd = tel.table.ServerDB()
         
-        Upload from SQL Database
+        # Upload from SQL Database
 
         mydb = mysql.connector.connect(host=r'development-app.AAASHERRY.com',
         user="sherry",password="sherry",database="sherry_data")
